@@ -1,0 +1,15 @@
+<template name="selectItem">
+  <select name="item" class="select_item" style="width: 50%;">
+    <option></option>
+    {{#each items}}
+      <option value="{{price}}">{{name}}</option>
+    {{/each}}
+  </select>
+</template>
+
+<template name="selectedResults">
+  <h1>You chose:</h1>
+  <h2>{{price}}</h2>
+  <h2>{{name}}</h2>
+  <h2>{{units}}</h2>
+</template>
